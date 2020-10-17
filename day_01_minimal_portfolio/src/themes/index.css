@@ -48,11 +48,12 @@ src: url("../assets/fonts/AvenirNextLTPro-UltLtCn.otf"); */
 }
 
 body {
-  padding: calc(var(--base) / 2) var(--base);
+  padding: var(--base) calc(var(--base) * 30);
   width: var(--width);
   height: var(--height);
   color: var(--base--color);
   font-size: var(--base);
   letter-spacing: var(--base--spacing);
   font-weight: var(--base-weight);
+  overflow-x: hidden;
 }

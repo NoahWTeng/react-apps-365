@@ -32,6 +32,9 @@ export const Block = styled.div`
       : "white"};
 
   display: ${(props) => (props.flex ? "flex" : props.display)};
+  flex-wrap: ${(props) => props.wrap && props.wrap};
+  flex: ${(props) => props.flexNumb && props.flexNumb};
+
   justify-content: ${(props) =>
     props.between
       ? "space-between"
@@ -49,50 +52,4 @@ export const Block = styled.div`
   padding: ${(props) => props.padding && props.padding};
   margin: ${(props) => props.margin && props.margin};
   overflow: ${(props) => props.overflow && props.overflow};
-
-  /* display: ${(props) => props.flex && "flex"};
-  flex-direction: ${(props) =>
-    props.row ? "row" : props.column ? "column" : props.direction};
-  align-items: ${(props) =>
-    props.center
-      ? "center"
-      : props.end
-      ? "flex-end"
-      : props.flexTop
-      ? "flex-top"
-      : props.align};
-  justify-content: ${(props) => (props.middle ? "center" : props.justify)};
-  background-color: ${(props) =>
-    props.primary
-      ? "var(--primary)"
-      : props.secondary
-      ? "var(--secondary)"
-      : props.color};
-  padding: ${(props) => {
-    if (props.padding) {
-      const paddings = props.padding.split(" ").map((number) => `${number}em`);
-      return paddings.join(" ");
-    }
-  }};
-  margin: ${(props) => {
-    if (props.margin) {
-      const margins = props.margin.split(" ").map((number) => `${number}em`);
-      return margins.join(" ");
-    }
-  }};
-  height: ${(props) =>
-    props.height ? `${props.height}%` : `${props.heightVH}vh`};
-  width: ${(props) => props.width && `${props.width}%`};
-  position: ${(props) =>
-    props.absolute
-      ? "absolute"
-      : props.relative
-      ? "relative"
-      : props.fixed
-      ? "fixed"
-      : null};
-  left: ${(props) => props.left && props.left};
-  right: ${(props) => props.right && props.right};
-  top: ${(props) => props.top && props.top};
-  bottom: ${(props) => props.bottom && props.bottom}; */
 `;
