@@ -25,8 +25,6 @@ export function App() {
     const rightDatas = datas.filter((_, idx) => idx % 2 !== 0);
 
     changeState((s) => ({ ...s, datas, leftDatas, rightDatas }));
-
-    return () => {};
   }, [state.init, state.finish]);
 
   const renderTitle = (item) => {
