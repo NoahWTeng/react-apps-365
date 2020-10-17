@@ -1,0 +1,58 @@
+/* 
+font-family: "Avenir-Next-Regular";
+src: url("../assets/fonts/AvenirNextLTPro-Regular.otf");
+font-family: "Avenir-Next-Light";
+src: url("../assets/fonts/AvenirNextLTPro-UltLtCn.otf"); */
+:root {
+  /* Base colors */
+  --primary: #0a0a0a;
+  --secondary: #9b9b9b;
+  /* Non-colors */
+  --black: #000020;
+  --white: #ffffff;
+  /* Color variations */
+
+  /* Global sizes */
+  --base--color: #0a0a0a;
+  --base-weight: 400;
+  --base: 16px;
+  --base--radius: 1em;
+  --base--padding: 1.4em;
+  --base--spacing: 0.01em;
+
+  /* Fonts sizes */
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --title: 1.563em;
+  --subtitle: 1.25em;
+  --base-font-size: 1em;
+  --caption: 0.9em;
+  --small: 0.7em;
+
+  /* App dimensions */
+  --width: 100vw;
+  --height: 100vh;
+
+  /* Weights */
+  --bold: 700;
+  --regular: 400;
+  --thin: 100;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: calc(var(--base) / 2) var(--base);
+  width: var(--width);
+  height: var(--height);
+  color: var(--base--color);
+  font-size: var(--base);
+  letter-spacing: var(--base--spacing);
+  font-weight: var(--base-weight);
+}
